@@ -7,4 +7,4 @@ let lesNroTwo: number;
 
 lesNroOne = 5;
 lesNroTwo = 6;
-console.log(NumberLessonTwo(numberOne, lesNroTwo));
+console.log(NumberLessonTwo(lesNroOne, lesNroTwo));
