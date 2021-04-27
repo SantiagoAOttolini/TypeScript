@@ -1,9 +1,9 @@
 class VehicleTwo {
   constructor(
-      //readonly does not allow assigning a new value
+    //readonly does not allow assigning a new value
     private readonly brandName: string,
-    private model: string,
-    private color: string
+    private readonly model: string,
+    private readonly color: string
   ) {}
 
   drive() {
@@ -13,6 +13,6 @@ class VehicleTwo {
   }
 }
 
-const vehicleTwo = new Vehicle("Honda", "2015", "red");
-vehicle.drive();
+const vehicleTwo = new VehicleTwo("Honda", "2015", "red");
+vehicleTwo.drive();
 console.log(vehicleTwo);
