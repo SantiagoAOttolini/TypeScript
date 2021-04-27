@@ -1,1 +1,0 @@
-let vehicle: "car" //whithout declare 

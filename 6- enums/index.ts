@@ -1,5 +1,5 @@
 enum role {
-  student,
+  students,
   teacher,
 }
 let persons: {
