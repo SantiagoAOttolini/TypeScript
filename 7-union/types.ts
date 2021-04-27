@@ -1,0 +1,1 @@
+let number: string | number | boolean
