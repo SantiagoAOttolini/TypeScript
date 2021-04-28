@@ -3,8 +3,17 @@ class VehicleThree {
     //readonly does not allow assigning a new value
     protected readonly brandName: string,
     private readonly model: string,
-    private readonly color: string
+    private readonly color: string,
+    private price: number
   ) {}
+
+  get getPrice(){
+    return this.price
+  }
+
+  set setPrice(value: number){
+    this.price = value
+  }
 
   drive() {
     console.log(
@@ -19,6 +28,11 @@ class Car extends VehicleThree {
     }
 }
 
-const vehicleThree = new Car("Honda", "2015", "red");
+const vehicleThree = new Car("Honda", "2015", "red", 200 );
+
+//set and get
+console.log(vehicleThree.getPrice)
+vehicleThree.setPrice = 400
+
 vehicleThree.drive();
 console.log(vehicleThree);
